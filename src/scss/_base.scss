@@ -1,0 +1,16 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #ffffff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+body.rtl {
+    direction: rtl;
+    text-align: right;
+    font-family: Dana;
+}
