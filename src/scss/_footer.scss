@@ -1,0 +1,31 @@
+.footer-top {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #040826;
+    color: #cfd3e5;
+}
+
+.footer-link {
+    text-decoration: none!important;
+    color: inherit;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.footer-blog-link {
+    &::before {
+        content: "■";
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.footer-bottom {
+    background-color: #03051a;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    color: white;
+}
