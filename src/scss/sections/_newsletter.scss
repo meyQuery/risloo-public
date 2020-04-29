@@ -1,19 +1,13 @@
-.section-newsletter {
-    background-color: #f6fbfe;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
 .form-group-newsletter {
     position: relative;
 
     input {
-        padding-right: 85px;
+        padding-left: 75px;
     }
 
     button {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 4px;
+        left: 4px;
     }
 }
