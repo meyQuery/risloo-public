@@ -1,6 +1,15 @@
+.img-landing {
+    min-width: 250px;
+    width: 75%;
+}
+
 @media (min-width: 576px) {
     .h-sm-100 {
         height: 100%;
+    }
+
+    .direction-sm-ltr {
+        direction: ltr;
     }
 }
 
@@ -8,16 +17,28 @@
     .h-md-100 {
         height: 100%;
     }
+
+    .direction-md-ltr {
+        direction: ltr;
+    }
 }
 
 @media (min-width: 992px) {
     .h-lg-100 {
         height: 100%;
     }
+
+    .direction-lg-ltr {
+        direction: ltr;
+    }
 }
 
 @media (min-width: 1200px) {
     .h-xl-100 {
         height: 100%;
+    }
+
+    .direction-xl-ltr {
+        direction: ltr;
     }
 }
