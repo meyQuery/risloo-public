@@ -6,3 +6,20 @@
 .section-colored {
     background-color: #f6fbfe;
 }
+
+.section-title::before,
+.section-title::after {
+    content: '';
+    display: block;
+    width: 20%;
+    min-width: 50px;
+    height: 5px;
+}
+
+.section-title::before {
+    background-image: linear-gradient(to right, #007bff , #e8f0fc);
+}
+
+.section-title::after {
+    background-image: linear-gradient(to left, #007bff , #e8f0fc);
+}
