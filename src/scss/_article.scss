@@ -1,0 +1,42 @@
+.article {
+    h1 {
+        font-size: 1.25rem;
+        margin-bottom: 1.25rem;
+        font-weight: 900;
+    }
+
+    p {
+        line-height: 1.618;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+.article-side {
+    padding: 1rem;
+    background-color: #ededed;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        font-size: .875rem;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+
+    &>div {
+        &:not(:last-of-type) {
+            h3 {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
