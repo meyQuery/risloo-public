@@ -1,7 +1,8 @@
 .article {
     p {
-        font-size: .875rem;
+        font-size: 1rem;
         line-height: 2;
+        margin-bottom: 1.25rem;
     }
 }
 
@@ -22,7 +23,7 @@ figcaption {
 .article blockquote {
     padding-right: 1rem;
     border-right: 3px solid black;
-    font-size: .875rem;
+    font-size: 1rem;
 
     &::before {
         content: '\201C';
@@ -34,7 +35,7 @@ figcaption {
 }
 
 .article ul {
-    font-size: .875rem;
+    font-size: 1rem;
 
     li {
         margin-bottom: .5rem;
