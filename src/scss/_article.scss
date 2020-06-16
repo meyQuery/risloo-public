@@ -1,5 +1,6 @@
 .article {
     p {
+        font-size: .875rem;
         line-height: 2;
     }
 }
@@ -15,5 +16,27 @@ figcaption {
     transition: all .2s;
     &:hover {
         background-color: #eee;
+    }
+}
+
+.article blockquote {
+    padding-right: 1rem;
+    border-right: 3px solid black;
+    font-size: .875rem;
+
+    &::before {
+        content: '\201C';
+    }
+
+    &::after {
+        content: '\201D';
+    }
+}
+
+.article ul {
+    font-size: .875rem;
+
+    li {
+        margin-bottom: .5rem;
     }
 }
