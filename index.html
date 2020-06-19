@@ -12,9 +12,8 @@
 </head>
 
 <body class="rtl">
-    <div class="container">
-        <div class=" pt-5"></div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3b475f;">
+        <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="dist/images/logo/logo.svg" alt="" height="32">
                 <span class="font-weight-bold">ریسلو</span>
@@ -29,12 +28,12 @@
                         <a class="nav-link" href="#">خانه</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">هزینه‌ها</a>
+                        <a class="nav-link" href="#price">هزینه‌ها</a>
                     </li>
                 </ul>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 
     <section class="section-header section-padding">
         <div class="container">
@@ -293,7 +292,7 @@
         </div>
     </section>
 
-    <section class="section-price section-padding">
+    <section class="section-price section-padding" id="price">
         <div class="d-flex justify-content-center flex-wrap">
             <div class="px-3 py-4 shadow-sm border rounded card-price m-3">
                 <div class="text-center mb-5">
@@ -531,6 +530,15 @@
     <script src="dist/vendors/jquery-3.4.1.min.js"></script>
     <script src="dist/vendors/popper.min.js"></script>
     <script src="dist/vendors/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).on("click","a.nav-link",function(e) {
+            e.preventDefault();
+            var id = $(this).attr("href");
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 800);
+        });
+    </script>
 </body>
 
 </html>
