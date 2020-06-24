@@ -1,5 +1,6 @@
 .profile-wall {
     height: 200px;
+    position: relative;
 }
 
 .profile-wall-img {
@@ -16,4 +17,11 @@
 .accept-request {
     position: absolute;
     right: 15px;
+}
+
+.profile-request {
+    position: absolute;
+    top: calc(50% - 32px);
+    right: 15px;
+    height: auto;
 }
