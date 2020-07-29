@@ -1,11 +1,11 @@
-.navbar {
+.rtl .navbar-brand {
+    margin-right: 0;
+    margin-left: 1rem;
+}
+
+.navbar-main {
     background-color: #3b475f;
     position: sticky;
     top: 0;
     z-index: 2;
-}
-
-.navbar-brand {
-    margin-right: 0;
-    margin-left: 1rem;
 }
