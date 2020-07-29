@@ -51,31 +51,29 @@
     </nav>
 
     <section class="section-pricing section-padding">
-        <div class="container">
-            <h1 class="text-center mb-5" style="font-size: 28px; font-weight: 900;">هزینه‌ها و پلن‌ها</h1>
-            <div class="row justify-content-center">
-                <div class="col-xl-5">
-                    <div class="bg-white shadow rounded mb-5 mb-lg-0">
-                        <div class="py-5">
-                            <img src="dist/images/icons/psychology.svg" alt="" height="128" class="d-block mx-auto mb-4">
-                            <h2 class="text-center font-weight-bolder" style="font-size: 24px; font-weight: 900;">کلینیک</h2>
-                            <div class="text-center text-secondary fs-14">این پلن مناسب کلینیک‌ها است</div>
-                        </div>
-                        <div class="p-3 border-top">فروش یک‌پارچه</div>
-                        <div class="p-3 border-top">فاکتور رایگان</div>
-                        <div class="p-3 border-top border-bottom">حساب‌داری آنلاین</div>
-                        <div class="p-4">
-                            <a href="#" class="btn btn-secondary btn-block">ثبت نام</a>
-                        </div>
+        <div class="background">
+            <div class="container-sm">
+                <div class="panel pricing-table">
+                    <div class="pricing-plan">
+                        <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
+                        <h2 class="pricing-header">کلینیک</h2>
+                        <ul class="pricing-features">
+                            <li class="pricing-features-item">Custom domains</li>
+                            <li class="pricing-features-item">Sleeps after 30 mins of inactivity</li>
+                        </ul>
+                        <span class="pricing-price">رایگان</span>
+                        <a href="#/" class="pricing-button">ثبت نام</a>
                     </div>
-                </div>
-                <div class="col-xl-5">
-                    <div class="bg-white shadow rounded">
-                        <div class="py-5">
-                            <img src="dist/images/icons/hospital.svg" alt="" height="128" class="d-block mx-auto mb-4">
-                            <h2 class="text-center font-weight-bolder" style="font-size: 24px; font-weight: 900;">مراکز درمانی</h2>
-                            <div class="text-center text-secondary fs-14">این پلن مناسب مراکز درمانی است</div>
-                        </div>
+
+                    <div class="pricing-plan">
+                        <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="pricing-img">
+                        <h2 class="pricing-header">مرکز مشاوره</h2>
+                        <ul class="pricing-features">
+                            <li class="pricing-features-item">Never sleeps</li>
+                            <li class="pricing-features-item">Multiple workers for more powerful apps</li>
+                        </ul>
+                        <span class="pricing-price">۱۵۰ تومان</span>
+                        <a href="#/" class="pricing-button">ثبت نام</a>
                     </div>
                 </div>
             </div>
@@ -86,7 +84,7 @@
     <script src="dist/vendors/popper.min.js"></script>
     <script src="dist/vendors/bootstrap-4.4.1/js/bootstrap.min.js"></script>
     <script>
-        $(document).on("click","a.nav-link",function(e) {
+        $(document).on("click", "a.nav-link", function (e) {
             e.preventDefault();
             var id = $(this).attr("href");
             $('html, body').animate({
